@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='mlresult.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+    <title>Preliminary Test Result</title>
+</head>
+<body>
+
+<div class="result">
+    {% if z> 70.00 %}
+    <img src="{{url_for('static',filename='warning.png')}}" class="symbol">
+    <h2 class="result_header">Do consult a doctor as there is high chances of having Lung cancer</h2>
+    <h2 class="result_header">{{output}}% probability was noticed</h2>
+    {% else %}
+    <img src="{{url_for('static',filename='shield.png')}}" class="symbol">
+    <h2 class="result_header">You are safe as there is low chances of Lung Cancer.</h2>
+    <h2 class="result_header">{{output}}% probability was noticed</h2>
+    {% endif %}
+    <a href="{{url_for('test')}}"><button type="Submit">Re-take Test</button></a>
+    <a href="{{url_for('home')}}"></a><button type="Submit">Home</button></a>
+</div>
+
+
+
+</body>
+</html> 

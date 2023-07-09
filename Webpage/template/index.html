@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+    <title>Lung Cancer Detection MainPage</title>
+</head>
+<body>
+
+<div id="home" class="banner">
+    <div class="navbar">
+        <img src="{{url_for('static',filename='LUNG CANCER DETECTION cropped.png')}}" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="{{url_for('test')}}">Preliminary_test</a></li>
+            <li><a href="{{url_for('scan')}}">CT-scan detection</a></li>
+            <li><a href="https://github.com/SaurabhSRP/Lung-Cancer-Web-App">Github</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Let's talk about Lung Cancer !!!</h1>
+        <p>Lung cancer is the most commonly diagnosed cancer worldwide, accounting for approximately 12.4% of all cancers diagnosed worldwide,
+            and is the leading cause of cancer-related deaths.Historically, the lung cancer epidemic seems to involve the developed world only.
+            Recent data suggest that the incidence of lung cancer is dramatically rising, with nearly half of new cases, 49.9%, diagnosed in the underdeveloped world.</p>
+        <p id="source">(*source: https://www.statpearls.com/ArticleLibrary/viewarticle/24489)</p>
+        <p> This Web app is an attempt to showcase the skills in Data analytics and Data science.
+            It consists of three main segments. First the Data Analytics part where data is visualized using tableau.
+            Second the "Preliminary_test" section where  ML classification algorithm is used for early lung cancer symptoms
+            based on the various health conditions/habits.
+            Third "CT-scan detection" section which is based on image classification based algorithm to detect cancer for 3 different types of cancer CT scan images.
+            <br>Hope you enjoy this . <br>Please drop your views/Suggestions on github page. Thank you have fun !
+
+        </p>
+    </div>
+
+</div>
+
+<div class="data1" id="about">
+    <div class="wrapper">
+        <img src="{{url_for('static',filename='lung_cancer_trend.PNG')}}">
+        <div class="text-box">
+            <h2>India's reported Lung Cancer incidence  </h2>
+            <p>Lung cancer is the most often diagnosed cancer and leading cause of cancer-related deaths worldwide.
+                In India, lung cancer accounts for 5.9% of all cancers and 8.1% of all cancer-related deaths.
+                The prevalence of smoking in patients with lung cancer is nearly 80%. Based on the data taken from data.gov.in
+                there is 5.18% rise in lung cancer cases from 2020 to 2022 (refer bar chart)
+            </p>
+            <p id="source">(*source-https://www.jto.org/article/S1556-0864(21)01704-4/fulltext)<br>(*Data - https://data.gov.in/keywords/Cancer)</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="data2">
+    <div class="section">
+        <div class="text">
+            <h2>India's Cancer incidence in all states for year 2022</h2>
+            <p>India sees an incidence of more than 1 million new cases of cancer every year, a number that is likely to increase given the increasing age of Indian population and lifestyle changes. Cancer is enormously complex and highly adaptable; many subtypes of the disease have distinct clinical features and susceptibilities to therapy.
+                Many cancers are still not diagnosed until they are at advanced stages and some resist most attempts at treatment.
+            According to a report by the Indian Council for Medical Research on the ‘Burden of cancers in India’, seven cancers accounted for more than 40% of the total disease burden: lung (10.6%), breast (10.5%), oesophagus (5.8%), mouth (5.7%), stomach (5.2%), liver (4.6%) and cervix uteri (4.3%).
+            As per the data provided by data.gov.in . Uttar Pradesh rank top in cancer incident records later followed by Maharashtra,West Bengal , Bihar ,Karnataka in the same order.
+            <p id="source">(*source - [1]https://www.livemint.com/science/health/indias-cancer-burden-to-rise-to-29-8-million-in-2025-icmr-report-11652382169284.html, [2]https://dbtindia.gov.in/scientific-decision-units/human-genomics-oncology/cancer) <br>(*Data source - https://data.gov.in/keywords/Cancer) </p>
+        </div>
+            <img src="{{url_for('static',filename='incidence.PNG')}}">
+        </p>
+
+    </div>
+</div>
+
+<div class="data1">
+    <div class="wrapper">
+        <img src="{{url_for('static',filename='mortality.png')}}">
+        <div class="text-box">
+            <h2>India's Cancer Mortality rate in all states for year 2022</h2>
+            <p>A cancer mortality rate is the number of deaths, with cancer as the underlying cause of death,
+                occurring in a specified population during a year. As per the data collected from data.gov.in . The same top 5 states
+                i.e Uttar Pradesh , Maharashtra,West Bengal , Bihar ,Karnataka have the highest mortality rates. The avg mortality of all the states is 56.13%.
+                While Mirzoram has the highest mortality rate among all the states coming to 64%. Cancer control in India has made progress in the last four decades since the Indian Council of Medical Research launched the National Cancer Registry (NCR) Programme in 1981 to aggregate data from population-based cancer registries (PBCR) and hospital-based cancer registries (HBCR) from around India.
+                Later on, the Department of Atomic Energy (DAE) acted as a national stakeholder by funding six tertiary cancer hospitals across India.The Tata Memorial Centre and the DAE have collaborated on the National Cancer Grid (NCG), a network of over 100 cancer centres in India,
+                and hosts virtual meetings for multi-disciplinary training of patient case reviews, as well other types of resource sharing.There are currently more than 30 PBCRs in India; however, these registries only cover 10% of the Indian population.
+                The funding constraints of the registries often limit their ability to ensure the quality of the data collected.
+                More cancer registries coming up across the country.
+            </p>
+            <p id="source">(*source-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9638636/)<br>(*Data - https://data.gov.in/keywords/Cancer)</p>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="dashboard" id="dashboard">
+        <h2> Tableau Dashboard</h2>
+        <p>This dashboard consists of cancer data from 2020-22 with interactive filters to toggle between years, as the above charts
+        only showcase 2022 data. To access this dashboard please click on the link below<br>
+            <a href="https://public.tableau.com/app/profile/saurabh8262/viz/lungcancerEDA/Dashboard1">https://public.tableau.com/app/profile/saurabh8262/viz/lungcancerEDA/Dashboard1</a>
+        </p>
+        <img src="{{url_for('static',filename='Dashboard.png')}}">
+    </div>
+</div>
+<div class="copyright">
+    <h2>Copyright Saurabh. Made with curiosity and love <i class="fa-solid fa-heart"></i></h2>
+</div>
+
+
+
+</body>

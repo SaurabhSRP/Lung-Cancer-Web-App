@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='mlstyle.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+    <title>Preliminary Test</title>
+</head>
+<body>
+<div class="preliminary_test"><h1>Answer the below Questions</h1></div>
+<div class="main">
+    <form action="/submit" method="post">
+        <h2 id="gender">Gender</h2>
+        <label class="radio">
+            <input class="radio-one" type="radio" checked="checked" name="gender" id="Male" value="Male">
+            <span class="checkmark"></span>
+            Male
+        </label>
+        <label class="radio">
+            <input class="radio-two" type="radio"  name="gender" id="Female" value="Female">
+            <span class="checkmark"></span>
+            Female
+        </label>
+
+        <h2 class="name">Age</h2>
+        <input class="age" type="number" name="age"><br>
+
+        <h2 class="name">Habit of Smoking??</h2>
+        <select class="option" name="smoking">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Yellow Fingers?</h2>
+        <select class="option" name="yellow_fingers">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">frequent Anxiety issues?</h2>
+        <select class="option" name="anxiety">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Peer Pressure??</h2>
+        <select class="option" name="peer_pressure">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Any Chronic Diseases??</h2>
+        <select class="option" name="chronic_dis">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Constant feeling of Fatigue??</h2>
+        <select class="option" name="fatigue">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Any Allergies??</h2>
+        <select class="option" name="allergy">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Frequent Wheezing??</h2>
+        <select class="option" name="wheezing">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Regular Alcohol Consumtion?</h2>
+        <select class="option" name="alcohol">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Frequent Coughing??</h2>
+        <select class="option" name="coughing">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Shortness of Breath??</h2>
+        <select class="option" name="short_breath">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Swallowing Difficulty??</h2>
+        <select class="option" name="swallowing">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <h2 class="name">Chest Pain??</h2>
+        <select class="option" name="chest_pain">
+            <option disabled="disabled" selected="selected">--Choose Option--</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+
+
+        <button type="submit" value="Submit">Submit</button>
+
+    </form>
+
+</div>
+
+
+
+</body>
+</html>

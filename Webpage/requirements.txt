@@ -1,0 +1,12 @@
+Flask
+pandas
+numpy
+pickle
+os
+urllib3
+Pillow
+matplotlib
+opencv-python
+tensorflow==2.12.*
+scikit-learn
+ipython

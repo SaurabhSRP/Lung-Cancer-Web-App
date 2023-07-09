@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='dlstyle.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+    <title>CT-Scan Image Classification</title>
+</head>
+<body>
+<div class="header">
+    <h1 class="header-name"> CT-scan Image Recognition </h1>
+    <div class="form">
+        <form action="/scan"  method="post" enctype="multipart/form-data">
+            <input class="choose-file" type="file" name="imagefile"><br>
+            <input id="predict" type="submit" value="Upload and predict">
+        </form>
+    </div>
+
+</form>
+
+</div>
+{% if get_label %}
+<div class="result">
+    <img src="{{url_for('static',filename=image)}}" class="symbol">
+    <h1 class="result_header">This image most likely belongs to <span class="span">{{ get_label }}</span> </h1>
+    <h2 class="result_header">Image recognised with <span class="span">{{ get_percent }}%</span>Confidence</h2>
+</div>
+{% endif %}
+
+</body>
