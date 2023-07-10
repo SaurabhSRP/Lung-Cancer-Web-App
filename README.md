@@ -2,9 +2,19 @@
 
 # Project Overview
 This marks the 3rd project within my portfolio. This web app showcases three main aspects of Data science i.e.
-- Data Analytics : The dashboard was created using Tableau and is available on the public forum for intreactive visualisation. The data was generated 
+- Data Analytics : The dashboard was created using Tableau and is available on the public forum for intreactive visualisation. The data was generated from data.gov.in website.
 - Machine learning (Classification) : The preliminary_test tab in the webapp presents a form which predicts whether there is a probability of having lung cancer using ML model running in the backend. As the dataset is very small consisting of 1000 records and there is huge imbalance. Over Sampling method was implemented.
-- Deep learning (image classification) : The CT-scan tab of the webapp presents the image classification using transfer learning method such as Resnet50. And you can test the model by uploading the image to see the inference given by the model.
+  There are two outcomes that can be seen based on the inputs.
+  
+  --SAFE : if the probability of lung cancer is below 70% ( this value is considered for this project and may not be actual criteria)
+  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML%20safe.png)
+
+  --Warning: IF the probability of lung cancer is above 70%
+  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML%20not%20safe.png)
+  
+- Deep learning (image classification) : The CT-scan tab of the webapp presents the image classification using transfer learning method such as Resnet50. And you can test the model by uploading the image to see the inference given by the model. below snippet shows the output that will be generated
+
+  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/DLoutput.png)
 
 ***Do check a short clip of the project***
 
