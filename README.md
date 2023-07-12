@@ -9,10 +9,10 @@ This marks the 3rd project within my portfolio. This web app showcases three mai
   Access the code : https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/ML%20model/Lung_Cancer_ML_model.ipynb
   
   --SAFE : if the probability of lung cancer is below 70% ( this value is considered for this project and may not be actual criteria)
-  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML%20safe.png)
+  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML_safegreen.png)
 
   --WARNING: IF the probability of lung cancer is above 70%
-  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML%20not%20safe.png)
+  ![Alt text](https://github.com/SaurabhSRP/Lung-Cancer-Web-App/blob/main/Project%20snapshot/ML_warning.png)
   
 - Deep learning (image classification) : The CT-scan tab of the webapp presents the image classification using transfer learning method such as Resnet50. And you can test the model by uploading the image to see the inference given by the model. below snippet shows the output that will be generated
 
